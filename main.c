@@ -13,6 +13,18 @@ int main()
     {
         y = exp(x - 1);
     }
+    else if (2 <= x && x < 5)
+    {
+        y = exp(x + 1);
+    }
+    else if (10 <= x && x < 15)
+    {
+        y = -log10(x) + (x / (cos(2 * x) + 1));
+    }
+    else
+    {
+        y = 5;
+    }
 
     system("cls");
     printf("x = %lf", x);
